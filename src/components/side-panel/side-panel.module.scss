@@ -1,0 +1,18 @@
+.wrapper {
+  width: 19rem;
+  height: 100%;
+  box-shadow: -5px 10px 50px rgba(34, 34, 34, 0.2);
+
+  .nav_header {
+    display: flex;
+    align-items: center;
+    height: 4.5rem;
+    padding: 0 1.5rem;
+    font-weight: 600;
+  }
+
+  .songs_container {
+    height: calc(100% - 4.5rem);
+    overflow-y: auto;
+  }
+}

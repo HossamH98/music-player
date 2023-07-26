@@ -1,0 +1,36 @@
+@import '../../styles/colors';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $hover-background-color;
+  }
+
+  &.active {
+    background-color: $active-background-color;
+    &:hover {
+      background-color: $active-background-color;
+    }
+  }
+
+  .artwork {
+    width: 4rem;
+    margin-right: 0.5rem;
+  }
+
+  .info {
+    color: $secondary-text-color;
+
+    &_name {
+      font-size: 0.8rem;
+    }
+
+    &_artist {
+      font-size: 0.6rem;
+    }
+  }
+}

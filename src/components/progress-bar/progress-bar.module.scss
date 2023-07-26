@@ -1,0 +1,17 @@
+@import '../../styles/colors';
+
+.progress_bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  input[type='range'] {
+    width: 60%;
+    margin: 0 10px;
+  }
+
+  .time_info {
+    font-size: 0.8rem;
+    color: $secondary-text-color;
+  }
+}
