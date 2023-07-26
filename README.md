@@ -16,6 +16,7 @@ A basic music player web application built using React, showcasing a collection 
 - Navigate within a song by dragging the seek bar.
 - Go to the next or previous song in the playlist.
 - Automatically play the next song when the current song ends for continuous music playback.
+- Play / Pause functionality with spacebar
 
 ## **Installation**
 
