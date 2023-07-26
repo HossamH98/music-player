@@ -10,6 +10,21 @@ export default function Player({ song, onNext, onPrevious }) {
   const [songInfo, setSongInfo] = useState({ currentTime: 0, duration: 0 });
 
   useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.keyCode === 32) {
+        event.preventDefault();
+        handlePlayPause();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
+  useEffect(() => {
     if (isPlaying) {
       audioRef.current.play();
     } else {
